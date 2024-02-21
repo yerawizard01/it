@@ -1,0 +1,25 @@
+$('tbody').append('<tr><td>'+cb1+'</td><td>'+cb2+'</td><td>'+cb3+'</td><td>'+cb4+'</td></tr>')
+
+
+
+var marginLeft = 0;
+$('img').css('margin-left','0px');
+for (var i = 0; i < 30; i++) {
+    
+    setTimeout(function() {
+        $('img').css('margin-left', '+=' + 30 + 'px');
+    }, i * 100);
+}
+
+<table class="table table-striped">
+    <thead>
+      <tr >
+        <th scope="col"></th>
+        <th scope="col">Item</th>
+        <th scope="col">Qty</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+  </table>
