@@ -1,0 +1,73 @@
+    <!-- Radio -->
+    <input type="radio" id="r1" name="r">
+    <label for="r1">Phone</label><br>
+    <input type="radio" id="r2" name="r">
+    <label for="r2">laptop</label><br><br>
+
+
+var radioInput = $("input[name='r']:checked").attr('id')
+
+    <!-- Dropdown -->
+    <label for="dd">Choose item</label>
+    <select id="dd" name="dd">
+        <option value="1 cup coffee and 2 cup water">1 cup coffee and 2 cup water</option>
+        <option value="2 cup coffee and 6 cup milk">2 cup coffee and 6 cup milk</option>
+    </select><br><br>
+
+var DropDownInput = $('#dd').val()
+
+    <!-- Checkbox -->
+    <input type="checkbox" id="cb" name="cb">
+    <label for="cb">Add default text</label><br><br>
+
+if ($('#cb').is(':checked')){
+                    var checkboxInput = 'yes'
+                }
+
+
+    <!-- Textarea -->
+    <textarea></textarea><br><br>
+    <button>Submit</button>
+    <div class="seconp container">
+var textArea = $('textarea').val()        
+
+  <!-- Input textbox -->
+    <label for="tb">Enter a number</label>
+    <input type="number" id="tb" name="tb"><br><br>
+
+var textInput = $('#tb').val()
+
+
+
+Table
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
