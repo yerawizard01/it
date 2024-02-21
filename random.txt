@@ -1,11 +1,35 @@
 1. startproject
+   django-admin startproject hemlo
+   cd 
+   py manage.py runserver
 2. create app
+   py manage.py startapp home
 3. urls.py in app
-4. write include home.urls in main
-5. from my_app import views
-6. path('', views.index,name='my_app'),
-7. views.py
-8. template
+In main:-
+from django.contrib import admin
+from django.urls import path,include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',include('home.urls'))
+]
+In app:-
+from django.contrib import admin
+from django.urls import path
+from home import views
+urlpatterns = [
+    path('', views.index,name='home'),
+]
+
+4. views.py
+templates outside everything
+-In settings.py
+'DIRS': [os.path.join(BASE_DIR,"templates")]
+add index.html
+-views 
+def index(req):
+    return render(req, 'index.html')
+
 
 
 
