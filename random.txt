@@ -1,0 +1,41 @@
+1. startproject
+2. create app
+3. urls.py in app
+4. write include home.urls in main
+5. from my_app import views
+6. path('', views.index,name='my_app'),
+7. views.py
+8. template
+
+
+
+for key, value in likes.items():
+     print(key, "->", value)
+
+for key in likes.keys():
+    print(key)
+
+
+for value in likes.values():
+     print(value)
+
+
+open()
+read() --> reads as a single string
+readlines() --> reads each lines
+split()
+write()
+close()
+
+f = open('','r')
+data = f.read()
+newData = data[::-1]
+f1 = open("out.txt","w")
+f1.write(newData)
+
+
+data = f.read()
+newData = data.split()
+print(data)
+newData.sort()
+print(newData)
